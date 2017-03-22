@@ -16,6 +16,10 @@ exports.handler = (event, context, callback) => {
         TableName: "endleg-score",
         Item: {
             "user": user,
+            "wins": 0,
+            "lose":0,
+            "draw":0,
+            "history": null
         }
     };
 
