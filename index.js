@@ -2,7 +2,7 @@ var AWS = require("aws-sdk");
 
 exports.handler = (event, context, callback) => {
 
-    console.log(event);
+    console.log(event.userName);
 
     AWS.config.update({
         region: "eu-central-1",
